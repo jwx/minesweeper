@@ -1,0 +1,73 @@
+cell {
+  display: inline-block;
+  width: 16px;
+  height: 100%;
+}
+
+cell div {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background-image: url("../../assets/minesweeper.png");
+}
+
+cell div.blank {
+  background-position: 0px -49px;
+}
+
+cell div.mine {
+  background-position: -34px -49px;
+}
+
+cell div.question {
+  background-position: -51px -49px;
+}
+
+cell div.revealed-0 {
+  background-position: -17px -49px;
+}
+
+cell div.revealed-1 {
+  background-position: 0px -66px;
+}
+
+cell div.revealed-2 {
+  background-position: -17px -66px;
+}
+
+cell div.revealed-3 {
+  background-position: -34px -66px;
+}
+
+cell div.revealed-4 {
+  background-position: -51px -66px;
+}
+
+cell div.revealed-5 {
+  background-position: -68px -66px;
+}
+
+cell div.revealed-6 {
+  background-position: -85px -66px;
+}
+
+cell div.revealed-7 {
+  background-position: -102px -66px;
+}
+
+cell div.revealed-8 {
+  background-position: -119px -66px;
+}
+
+cell div.revealed--1 {
+  background-position: -85px -49px;
+}
+
+cell div.revealed--2 {
+  background-position: -102px -49px;
+}
+
+cell div.revealed--3 {
+  background-position: -119px -49px;
+}

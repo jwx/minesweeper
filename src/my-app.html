@@ -1,0 +1,19 @@
+<import from="./resources/digits"></import>
+<import from="./resources/board"></import>
+
+<board if="value.bind: started; cache: false" rows.bind="+rows" columns.bind="+columns" mines.bind="+mines"></board>
+<div else class="settings">
+  <div class="title">Mine<span>s</span>weeper</div>
+  <div class="options">
+    <label>Rows: </label>
+    <div class="digit-input"><input value.bind="rows" maxlength="3"><span class="input-display">${rows | digits}</span>
+    </div>
+    <label>Columns: </label>
+    <div class="digit-input"><input value.bind="columns" maxlength="3"><span class="input-display">${columns |
+        digits}</span></div>
+    <label>Mines: </label>
+    <div class="digit-input"><input value.bind="mines" maxlength="3"><span class="input-display">${mines |
+        digits}</span></div>
+    <button click.trigger="started = true">Start</button>
+  </div>
+</div>

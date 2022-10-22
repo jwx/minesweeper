@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Arcade";
+  src: url("../assets/PressStart2P-vaV7.ttf");
+  /* src: url("CustomFont.woff") format("woff"),
+    url("CustomFont.otf") format("opentype"),
+    url("CustomFont.svg#filename") format("svg"); */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+my-app {
+  margin: auto;
+}
+
+.title {
+  border-image-source: url("../assets/score-border.png");
+  border-style: solid;
+  border-image-slice: 10 10 2 fill;
+  border-width: 10px 10px 2px;
+  padding: 25px;
+}
+.title > span {
+  color: red;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 70% auto;
+  gap: 10px;
+  border-image-source: url("../assets/cells-border.png");
+  border-style: solid;
+  border-image-slice: 8 10 10 fill;
+  border-width: 8px 10px 10px;
+  padding: 25px;
+}
+
+.digit-input {
+  display: grid;
+  grid-template-columns: min-content;
+}
+
+.digit-input .input-display, .digit-input input {
+  grid-row: 1;
+  grid-column: 1;
+  display: inline-block;
+  height: 23px;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.settings, .settings button {
+  font-family: 'Arcade';
+}
+.settings button {
+  grid-column: 1 / span 2;
+}
+
+.digit-input input {
+  border: 0;
+  z-index: 1;
+  font-size: 23px;
+  text-align: right;
+  opacity: 0;
+}
+
+.digit {
+  display: inline-block;
+  width: 13px;
+  height: 23px;
+  background-image: url("../assets/minesweeper.png");
+  position: relative;
+  image-rendering: pixelated;
+}
+
+.digit-1 {
+  background-position: 0px 0px;
+}
+
+.digit-2 {
+  background-position: -14px 0px;
+}
+
+.digit-3 {
+  background-position: -28px 0px;
+}
+
+.digit-4 {
+  background-position: -42px 0px;
+}
+
+.digit-5 {
+  background-position: -56px 0px;
+}
+
+.digit-6 {
+  background-position: -70px 0px;
+}
+
+.digit-7 {
+  background-position: -84px 0px;
+}
+
+.digit-8 {
+  background-position: -98px 0px;
+}
+
+.digit-9 {
+  background-position: -112px 0px;
+}
+
+.digit-0 {
+  background-position: -126px 0px;
+}
+
+.digit-- {
+  background-position: -140px 0px;
+}
+
+.digit- {
+  background-position: -154px 0px;
+}

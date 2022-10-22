@@ -1,0 +1,54 @@
+board {
+  image-rendering: pixelated;
+}
+
+board .score {
+  height: 24px;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  background-color: silver;
+  border-image-source: url("../../assets/score-border.png");
+  border-style: solid;
+  border-image-slice: 10 10 2;
+  border-width: 10px 10px 2px;
+}
+
+board .cells {
+  border-image-source: url("../../assets/cells-border.png");
+  border-style: solid;
+  border-image-slice: 8 10 10;
+  border-width: 8px 10px 10px;
+}
+
+board .smiley {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../../assets/minesweeper.png") 0px -24px;
+}
+
+board .revealing {
+  background: url("../../assets/minesweeper.png") -50px -24px;
+}
+
+board .game-over {
+  background: url("../../assets/minesweeper.png") -100px -24px;
+}
+
+board .win {
+  background: url("../../assets/minesweeper.png") -75px -24px;
+}
+
+board .board {
+  position: relative;
+  display: inline-block;
+  background-color: silver;
+  padding: 5px;
+}
+
+board .row {
+  display: block;
+  height: 16px;
+  white-space: nowrap;
+}

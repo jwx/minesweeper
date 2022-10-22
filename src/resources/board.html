@@ -1,0 +1,15 @@
+<import from="./digits"></import>
+<import from="./cell"></import>
+
+<div class="board">
+  <div class="score">
+    <div class="mines">${ remainingMines | digits }</div>
+    <div class="smiley ${cls}" click.trigger="endGame()"></div>
+    <div class="time">${ timePassed | digits }</div>
+  </div>
+  <div class="cells">
+    <div class="row" repeat.for="row of rows">
+      <cell repeat.for="column of columns" cell.bind="grid[row][column]" row.bind column.bind grid.bind></cell>
+    </div>
+  </div>
+</div>
